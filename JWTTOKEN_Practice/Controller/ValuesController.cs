@@ -23,7 +23,7 @@ namespace JWTTOKEN_Practice.Controller
         {
             var data = context.signUps.Add(signUp);
             context.SaveChanges();
-            return Ok("Records Added");
+            return Ok("Records Add");
             //return Ok();
         }
 
