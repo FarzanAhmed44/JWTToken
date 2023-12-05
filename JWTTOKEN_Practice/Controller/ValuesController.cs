@@ -24,7 +24,7 @@ namespace JWTTOKEN_Practice.Controller
             var data = context.signUps.Add(signUp);
             context.SaveChanges();
             return Ok("Records Add");
-           //returns
+           //returns data
         }
 
         [HttpPost("Login")]
