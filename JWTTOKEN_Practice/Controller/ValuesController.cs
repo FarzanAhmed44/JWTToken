@@ -35,6 +35,7 @@ namespace JWTTOKEN_Practice.Controller
             if (data != false)
             {
                 return RedirectToAction("", "");
+                //return Ok();
             }
 
             return Ok();
