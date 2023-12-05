@@ -25,6 +25,7 @@ namespace JWTTOKEN_Practice.Controller
             context.SaveChanges();
             return Ok("Record Added successfully...");
             //return BadRequest(data);    
+            //return data;
            
         }
 
