@@ -19,11 +19,12 @@ namespace JWTTOKEN_Practice.Controller
         }
        
         [HttpPost("SignIn")]
-        public IActionResult SignIn(SignUp signUp)
+        public IActionResult SignIn(SignUp signUp)  //signIn part
         {
             var data = context.signUps.Add(signUp);
             context.SaveChanges();
             return Ok("Record Added successfully...");
+            //return BadRequest(data);    
            
         }
 
@@ -35,8 +36,7 @@ namespace JWTTOKEN_Practice.Controller
             if (data != false)
             {
                 return RedirectToAction("", "");
-                //return bool;
-                //return
+              
             }
 
             return Ok();
